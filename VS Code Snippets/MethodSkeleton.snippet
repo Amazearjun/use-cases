@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Method Skeleton</Title>
+            <Author>Your Name</Author>
+            <Description>Inserts a basic method skeleton.</Description>
+            <Shortcut>meth</Shortcut> </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>methodName</ID>
+                    <ToolTip>Name of the method</ToolTip>
+                    <Default>MyMethod</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>returnType</ID>
+                    <ToolTip>Return type of the method</ToolTip>
+                    <Default>void</Default>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>parameters</ID>
+                    <ToolTip>Parameters of the method</ToolTip>
+                    <Default></Default>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp">
+                <![CDATA[$returnType$ $methodName$($parameters$)
+                {
+                    $end$
+                }]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
